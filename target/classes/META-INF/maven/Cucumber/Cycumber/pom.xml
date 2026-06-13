@@ -24,10 +24,12 @@
   <dependencies>
   
   <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+<!-- Source: https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
-    <version>4.33.0</version>
+    <version>4.44.0</version>
+    <scope>compile</scope>
 </dependency>
 
    <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->

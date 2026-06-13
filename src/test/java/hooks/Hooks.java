@@ -1,6 +1,7 @@
 package hooks;
 
 import java.io.IOException;
+import java.time.Duration;
 import java.util.Properties;
 
 import org.openqa.selenium.OutputType;
@@ -22,6 +23,7 @@ public class Hooks {
 		driver= Baseclass.IntilizeBrowser();
 		p=Baseclass.getProperties();
 		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get(p.getProperty("appURL"));
 		
 	}
