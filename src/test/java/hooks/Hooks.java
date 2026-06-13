@@ -23,7 +23,6 @@ public class Hooks {
 		driver= Baseclass.IntilizeBrowser();
 		p=Baseclass.getProperties();
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get(p.getProperty("appURL"));
 		
 	}
